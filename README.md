@@ -1,2 +1,8 @@
-# register-email-login
-Spring Boot Application for User Registration, Email Verification and Login
+# Register Verification Login Application
+## Spring Boot Application for User Registration, Email Verification and Login
+
+## Process:
+
+### 1: [INITIALIZING]
+TASKS:
+- [1.1] Create Spring Boot Project, Database Schema and application.yml
