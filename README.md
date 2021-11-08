@@ -10,3 +10,4 @@ TASKS:
 ### 2: [USER]
 TASKS:
 - [2.1] Create UserApp Entity
+- [2.2] Implement Service and Repository to find Users by Username (Email)
