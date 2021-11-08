@@ -15,3 +15,7 @@ TASKS:
 ### 3: [REGISTRATION]
 TASKS:
 - [3.1] Add Registration Controller and Service
+
+### 4: [SECURITY]
+TASKS:
+- [4.1] Configure Spring Security and secure End-Points
