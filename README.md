@@ -1,5 +1,5 @@
 # Register, Verification & Login Application
-## Spring Boot Application for User Registration, Email Verification and Login
+## Complete Backend Spring Boot Application for User Login and Registration, including Email Verification links
 
 ## Process:
 
@@ -11,3 +11,7 @@ TASKS:
 TASKS:
 - [2.1] Create UserApp Entity
 - [2.2] Implement Service and Repository to find Users by Username (Email)
+
+### 3: [REGISTRATION]
+TASKS:
+- [3.1] Add Registration Controller and Service
