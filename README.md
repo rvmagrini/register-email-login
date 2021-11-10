@@ -17,3 +17,7 @@ TASKS:
 - [3.1] Add Registration Controller and Service
 - [3.2] Configure Spring Security and secure End-Points
 - [3.3] Implement Registration Service 
+
+### 4: [EMAIL CONFIRMATION]
+TASKS:
+- [4.1] Create TokenConfirmation Entity and set ManyToOne relationship with AppUser
