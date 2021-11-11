@@ -20,4 +20,6 @@ TASKS:
 
 ### 4: [EMAIL CONFIRMATION]
 TASKS:
-- [4.1] Create TokenConfirmation Entity and set ManyToOne relationship with AppUser
+- [4.1] Create ConfirmationToken Entity and set ManyToOne relationship with AppUser
+- [4.2] Implement Service and Repository to save TokenConfirmation
+
