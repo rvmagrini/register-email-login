@@ -25,5 +25,9 @@ public class ConfirmationTokenService {
 		return confirmationTokenRepository.updateConfirmedAt(token, LocalDateTime.now());
 	}
 	
+	public int updateToken(String token, LocalDateTime createdAt, LocalDateTime expiresAt, Long userId) {
+		return confirmationTokenRepository.updateToken(token, createdAt, expiresAt, userId);
+	}
+	
 
 }

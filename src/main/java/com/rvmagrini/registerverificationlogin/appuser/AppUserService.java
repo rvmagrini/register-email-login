@@ -17,7 +17,7 @@ import lombok.AllArgsConstructor;
 @Service
 @AllArgsConstructor
 public class AppUserService implements UserDetailsService {
-	
+
 	private final static String USER_NOT_FOUND_MSG = "user with email %s not found";
 	private final AppUserRepository appUserRepository;
 	private final BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -25,17 +25,11 @@ public class AppUserService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-		return appUserRepository.findByEmail(email).orElseThrow(() -> 
-			new UsernameNotFoundException(String.format(USER_NOT_FOUND_MSG, email)));
+		return appUserRepository.findByEmail(email)
+				.orElseThrow(() -> new UsernameNotFoundException(String.format(USER_NOT_FOUND_MSG, email)));
 	}
-	
-	
+
 	public String signUpUser(AppUser appUser) {
-		boolean userExists = appUserRepository.findByEmail(appUser.getEmail()).isPresent();
-		
-		if (userExists) {
-			throw new IllegalStateException("email already taken");
-		}
 		
 		String encodedPassword = bCryptPasswordEncoder.encode(appUser.getPassword());
 		
@@ -53,11 +47,11 @@ public class AppUserService implements UserDetailsService {
 				);
 		
 		confirmationTokenService.saveConfirmationToken(confirmationToken);
-		
-		// TODO: SEND EMAIL
-		
+				
 		return token;
+		
 	}
+
 	
 	public int enableAppUser(String email) {
 		return appUserRepository.enableAppUser(email);

@@ -23,3 +23,4 @@ TASKS:
 - [4.1] Create ConfirmationToken Entity and set ManyToOne relationship with AppUser
 - [4.2] Implement Service and Repository to save TokenConfirmation
 - [4.3] Create Verification link to confirm Token and enable AppUser
+- [4.4] Send Email with link to activate AppUser account
