@@ -1,5 +1,5 @@
 # Register, Verification & Login Application
-## Complete Backend Spring Boot Application for User Login and Registration, including Email Verification links
+## Complete Backend Spring Boot Application for User Registration and Login, including Email Verification links
 
 ## Process:
 
